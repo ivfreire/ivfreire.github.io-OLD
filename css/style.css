@@ -74,3 +74,17 @@ div#intro div.dialog {
 	border-radius: 10px;
 	font-size: 16px;
 }
+
+@media screen and (max-width: 624px) {
+	div.wrapper {
+		padding: 0;
+		width: 100%;
+	}
+
+	div#intro img.profile {
+		width: 80%;
+	}
+	div#intro h1 {
+		font-size: 64px;
+	}
+}
