@@ -1,13 +1,6 @@
-const Animation = {
-	init: function() {
-		this.canvas = document.getElementsByTagName('canvas')[0];
-		this.canvas.width = window.innerWidth;
-		this.canvas.height = window.innerHeight;
+/*
+	Created by Ícaro Freire on October 5th, 2021.
+	São Paulo, Brazil
+	https://github.com/ivfreire/
+*/
 
-		this.ctx = this.canvas.getContext('2d');
-	}
-};
-
-window.onload = function() {
-	Animation.init();
-}
