@@ -4,3 +4,8 @@
 	https://github.com/ivfreire/
 */
 
+window.onload = function() {
+	$.get('https://icarofreire.com/?s=reddit', function(data) {
+		console.log(data);
+	});
+}
