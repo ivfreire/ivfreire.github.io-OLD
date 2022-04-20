@@ -1,0 +1,30 @@
+div#intro {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	padding: 5% 5%;
+	flex-direction: row-reverse;
+}
+
+div#intro div.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+div#intro div.right { width: 40%; }
+
+div#intro div.right img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+div#intro div.left h2 {
+	font-size: 92px;
+	text-shadow: black 0px 5px 0;
+}
+div#intro div.left p {
+	margin-top: 50px;
+	font-size: 18px;
+	line-height: 32px;
+}

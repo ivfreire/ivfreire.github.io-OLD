@@ -1,22 +1,101 @@
-/*
-	Created by Ícaro Freire on January 12th, 2022.
-	São Paulo, Brazil.
-	https://github.com/ivfreire/
-*/
+:root {
+	--bg-color: #232323;
+	--main-theme: #006699;
+	--sec-theme: #004477;
+	--text-color: white;
+}
 
 * {
 	margin: 0;
 	padding: 0;
 }
 
-div.column {
-	width: 70%;
-	padding: 0 15%;	
-}
-
 body {
-	background-color: #343434;
-	color:white;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-footer div.footer { text-align: center; }
+div.webpage { padding: 0 0; }
+
+header {
+	position: relative;
+	width: 100%;
+}
+
+header h1 {
+	padding: 20px 15%;
+	font-size: 72px;
+	text-shadow: var(--sec-theme) 0px 2px 0;
+}
+
+header div.back {
+	position: absolute;
+	width: 70%;
+	height: 45%;
+	top: 55%;
+	background-color: var(--main-theme);
+	z-index: -1;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+nav.navigation {
+	width: 100%;
+}
+nav.navigation ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	background-color: var(--main-theme);
+}
+
+nav.navigation ul a { width: 100%; }
+
+nav.navigation ul a li button {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 16px;
+	padding: 15px 0 15px 0;
+	font-weight: bold;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	transition: all 0.1s;
+}
+nav.navigation ul a:first-child li button { border-top-left-radius: 0; }
+nav.navigation ul a:last-child li button { border-top-right-radius: 0; }
+
+nav.navigation ul button:hover {
+	background-color: var(--sec-theme);
+	text-decoration: underline;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	margin-bottom: 100px;
+}
+footer > div { text-align: center; }
+footer p { padding: 30px 0; }
+footer div.back {
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	top: 0%;
+	background-color: var(--main-theme);
+	z-index: -1;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+div.wrapper {
+	width: 70%;
+	padding: 0 15%;
+}
+
+div.stack div.container:first-child div.wrapper > div { border: none; }
+div.stack div.container div.wrapper > div{
+	border-top: 1px dashed var(--main-theme);
+}
