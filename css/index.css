@@ -1,8 +1,8 @@
 div#intro {
 	display: flex;
 	justify-content: space-between;
-	width: 90%;
-	padding: 5% 5%;
+	width: 80%;
+	padding: 10%;
 	flex-direction: row-reverse;
 }
 
